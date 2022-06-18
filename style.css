@@ -1,0 +1,168 @@
+@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@600&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Open+Sans:wght@400;700&display=swap");
+
+:root {
+  --pink: hsl(322, 100%, 66%);
+  --pale-cyan: hsl(193, 100%, 96%);
+  --dark-cyan: hsl(192, 100%, 9%);
+  --grayish-blue: hsl(208, 11%, 55%);
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  /* border: 1px solid red; */
+}
+
+body {
+  font-size: 18px;
+  font-family: "Poppins", sans-serif;
+}
+
+a {
+  text-decoration: none;
+}
+
+nav {
+  display: flex;
+  width: 100%;
+  justify-content: space-between;
+  margin-bottom: 4rem;
+}
+
+.try_it_btn {
+  background-color: white;
+  padding: 0.5rem 3rem;
+  border-radius: 2rem;
+  cursor: pointer;
+  font-weight: 800;
+}
+
+.hero_section {
+  background: url(./images/bg-hero-desktop.svg);
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  height: fit-content;
+  background-color: var(--pale-cyan);
+  padding: 5vw;
+}
+
+.hero_container {
+  display: grid;
+  grid-template-columns: 1fr 1.3fr;
+  column-gap: 3vw;
+}
+
+.hero_text {
+  margin-top: 4.5rem;
+}
+
+.hero_container h1 {
+  font-size: 2.5rem;
+  font-weight: 600;
+  color: var(--dark-cyan);
+  margin-bottom: 2rem;
+}
+
+.hero_container p {
+  font-size: 1rem;
+  font-weight: 400;
+  color: var(--grayish-blue);
+  margin-bottom: 2rem;
+}
+
+.get_started_btn_1,
+.get_started_btn_2 {
+  background-color: var(--pink);
+  color: white;
+  border-radius: 2rem;
+}
+
+.get_started_btn_1 {
+  padding: 0.8rem 2.5rem;
+}
+
+.hero_img_div img {
+  height: 25rem;
+  width: 100%;
+}
+
+.middle_section {
+  padding: 5rem 6vw;
+  flex-wrap: wrap;
+}
+
+.middle_section div h2 {
+  font-size: 1.2rem;
+  font-weight: 800;
+  color: var(--dark-cyan);
+  margin-bottom: 1rem;
+}
+
+.middle_section div p {
+  font-size: 1rem;
+  font-weight: 400;
+  color: var(--grayish-blue);
+  margin-bottom: 1rem;
+}
+
+.middle_card {
+  display: flex;
+  column-gap: 3vw;
+  justify-content: space-between;
+  margin-bottom: 2rem;
+  border-radius: 2rem;
+  border: 2px light gray;
+}
+
+.middle_card_text {
+  /* flex: 2; */
+  padding: 0 5rem;
+  margin: auto;
+  /* max-width: 40rem; */
+}
+
+.middle_card_img_div {
+  flex: 1;
+  height: 100%;
+  background-color: blue;
+}
+
+.middle_card_img {
+  height: 20rem;
+  width: 25rem;
+  /* position: relative;
+  left: 7rem; */
+  /* display: flex; */
+  /* margin: 2rem 0; */
+}
+
+.build_box {
+  width: fit-content;
+  height: fit-content;
+  background-color: #fff;
+  margin: 0 auto;
+  text-align: center;
+  padding: 2rem 4rem;
+  position: relative;
+  top: 4rem;
+  border-radius: 0.7rem;
+}
+
+.build_box h3 {
+  color: var(--dark-cyan);
+  font-weight: 600;
+}
+
+.get_started_btn_2 {
+  padding: 0.8rem 3rem;
+  margin-top: 1.5rem;
+}
+
+footer {
+  color: #fff;
+  padding-top: 5rem;
+  background-color: var(--dark-cyan);
+}
