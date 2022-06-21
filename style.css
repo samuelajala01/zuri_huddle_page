@@ -20,8 +20,13 @@ body {
   font-family: "Poppins", sans-serif;
 }
 
+button {
+  border: unset;
+}
+
 a {
   text-decoration: none;
+  color: #fff;
 }
 
 nav {
@@ -37,6 +42,10 @@ nav {
   border-radius: 2rem;
   cursor: pointer;
   font-weight: 800;
+}
+
+.try_it_btn a {
+  color: var(--dark-cyan);
 }
 
 .hero_section {
@@ -90,6 +99,7 @@ nav {
 }
 
 .middle_section {
+  width: 100%;
   padding: 5rem 6vw;
   flex-wrap: wrap;
 }
@@ -111,6 +121,7 @@ nav {
 .middle_card {
   display: flex;
   column-gap: 3vw;
+  width: fit-content;
   justify-content: space-between;
   margin-bottom: 2rem;
   border-radius: 2rem;
@@ -118,25 +129,21 @@ nav {
 }
 
 .middle_card_text {
-  /* flex: 2; */
-  padding: 0 5rem;
+  padding: 0 5vw;
   margin: auto;
-  /* max-width: 40rem; */
 }
 
 .middle_card_img_div {
   flex: 1;
   height: 100%;
-  background-color: blue;
+  border-radius: inherit;
 }
 
 .middle_card_img {
+  display: block;
+  border-radius: inherit;
   height: 20rem;
-  width: 25rem;
-  /* position: relative;
-  left: 7rem; */
-  /* display: flex; */
-  /* margin: 2rem 0; */
+  width: 35vw;
 }
 
 .build_box {
@@ -145,7 +152,7 @@ nav {
   background-color: #fff;
   margin: 0 auto;
   text-align: center;
-  padding: 2rem 4rem;
+  padding: 2rem 4vw;
   position: relative;
   top: 4rem;
   border-radius: 0.7rem;
@@ -163,6 +170,56 @@ nav {
 
 footer {
   color: #fff;
-  padding-top: 5rem;
+  padding: 5rem;
   background-color: var(--dark-cyan);
+}
+
+#footer-logo {
+  margin-bottom: 1rem;
+}
+
+.footer-wrapper {
+  display: grid;
+  column-gap: 4vw;
+  grid-template-columns: repeat(3, 1fr);
+}
+footer span {
+  display: block;
+}
+
+footer p {
+  text-align: right;
+}
+
+.footer-links {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+}
+
+.footer-links span {
+  margin-bottom: 0.3rem;
+}
+
+@media (max-width: 768px) {
+  .hero_container,
+  .footer-wrapper,
+  .footer-links {
+    display: block;
+  }
+  .hero_container {
+    text-align: center;
+  }
+
+  .middle_card:nth-child(2) {
+    flex-direction: column;
+  }
+  .middle_card_img {
+    margin: 0 auto;
+    display: block;
+    width: 100%;
+  }
+  .middle_card {
+    display: flex;
+    flex-direction: column-reverse;
+  }
 }
