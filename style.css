@@ -12,7 +12,6 @@
   margin: 0;
   padding: 0;
   box-sizing: border-box;
-  /* border: 1px solid red; */
 }
 
 body {
@@ -125,7 +124,7 @@ nav {
   justify-content: space-between;
   margin-bottom: 2rem;
   border-radius: 2rem;
-  border: 2px light gray;
+  box-shadow: 2px 2px 2px 2px hsl(208, 11%, 55%, 0.4);
 }
 
 .middle_card_text {
@@ -170,7 +169,7 @@ nav {
 
 footer {
   color: #fff;
-  padding: 5rem;
+  padding: 5rem 5vw;
   background-color: var(--dark-cyan);
 }
 
@@ -183,6 +182,15 @@ footer {
   column-gap: 4vw;
   grid-template-columns: repeat(3, 1fr);
 }
+.footer-desc div {
+  display: flex;
+  margin-bottom: 1rem;
+}
+
+.footer-desc img {
+  margin-right: 0.8rem;
+}
+
 footer span {
   display: block;
 }
@@ -197,7 +205,7 @@ footer p {
 }
 
 .footer-links span {
-  margin-bottom: 0.3rem;
+  margin-bottom: 0.7rem;
 }
 
 @media (max-width: 768px) {
@@ -209,6 +217,13 @@ footer p {
   .hero_container {
     text-align: center;
   }
+  .hero_text h1 {
+    font-size: 8vw;
+  }
+
+  .get_started_btn_1 {
+    margin-bottom: 3rem;
+  }
 
   .middle_card:nth-child(2) {
     flex-direction: column;
@@ -218,8 +233,23 @@ footer p {
     display: block;
     width: 100%;
   }
+
+  .middle_card_text {
+    margin: 2rem 0;
+  }
   .middle_card {
+    text-align: center;
     display: flex;
     flex-direction: column-reverse;
+  }
+  .footer-links {
+    margin-bottom: 0.6rem;
+  }
+  .socials {
+    text-align: center;
+    margin: 1rem 0.5rem;
+  }
+  footer p {
+    text-align: center;
   }
 }
