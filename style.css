@@ -208,6 +208,13 @@ footer p {
   margin-bottom: 0.7rem;
 }
 
+.socials i {
+  border: 1px solid white;
+  padding: 0.5rem;
+  border-radius: 60%;
+  margin-left: 1rem;
+}
+
 @media (max-width: 768px) {
   .hero_container,
   .footer-wrapper,
