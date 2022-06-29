@@ -5,24 +5,33 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <link rel="stylesheet" href="./style.css" />
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet" />
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
     <script
       src="https://kit.fontawesome.com/4c9f7b6b21.js"
       crossorigin="anonymous"
     ></script>
+
     <title>Huddle landing Page</title>
   </head>
   <body>
     <section class="hero_section">
       <nav>
         <img src="./images/logo.svg" height="30" />
-        <button class="try_it_btn">
+        <button
+          class="try_it_btn"
+          data-aos="fade-left"
+          data-aos-duration="2000"
+        >
           <a href="">Try it Free</a>
         </button>
       </nav>
 
       <div class="hero_container">
         <div class="hero_text">
-          <h1>Build The Community Your Fans Will Love</h1>
+          <h1 data-aos="fade-right" data-aos-duration="2000">
+            Build The Community Your Fans Will Love
+          </h1>
           <p>
             Huddle re-imagines the way we build communities. You have a voice,
             but so does your audience. Create connections with your users as you
@@ -36,7 +45,7 @@
       </div>
     </section>
     <section class="middle_section">
-      <div class="middle_card">
+      <div class="middle_card" data-aos="zoom-in">
         <div class="middle_card_text">
           <h2>Grow together</h2>
           <p>
@@ -52,7 +61,7 @@
           />
         </div>
       </div>
-      <div class="middle_card">
+      <div class="middle_card" data-aos="zoom-in">
         <div class="middle_card_img_div">
           <img
             src="./images/illustration-flowing-conversation.svg"
@@ -68,7 +77,7 @@
           </p>
         </div>
       </div>
-      <div class="middle_card">
+      <div class="middle_card" data-aos="zoom-in">
         <div class="middle_card_text">
           <h2>Your users</h2>
           <p>
@@ -129,5 +138,8 @@
       </div>
       <p>Copyright 2018 Huddle. All rights reserved</p>
     </footer>
+    <script>
+      AOS.init()
+    </script>
   </body>
 </html>
